@@ -1,12 +1,18 @@
-# NodeTest
+# NodeTest 1
+
+ To run this code, first make sure you have "Node.js" installed. 
  
-To run this code, you will need to have Node.js installed 
+ Then, create a new directory and "run npm init" to create a "package.json" file. 
+ 
+ Next, install the axios library by running 
+ 
+ "npm install axios".
+ 
+Finally, create a new file and copy the above code into it. You can then run the code using the command node <filename>.js, where <filename> is the name of the file you created.
 
-Install the axios library using
-  "npm install axios"
-
-Then, you can save the code in a file like "index.js" and run it using
+eg: save the code in a file like "index.js" and run it using
    "node index.js"
+
 
 Here is the plan for Pokémon's evolution chain:
 
