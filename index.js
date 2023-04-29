@@ -1,12 +1,12 @@
 const axios = require('axios');
-
+const apiUrl = 'https://pokeapi.co/api/v2';
 //The getEvolutionChain function accepts a pokemonName string as input and returns a promise that resolves to the JSON text of the output object. The function obtains information about the supplied Pokemon, utilises that information to retrieve the evolution chain, and then recursively follows the evolution chain to produce the result object.
 
 async function getEvolutionChain(pokemonName) {
 
     // retrieve information about the given Pokémon
 
-    const pokemonResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    const pokemonResponse = await axios.get(`${apiUrl}/pokemon/${pokemonName}`);
     const pokemonSpeciesUrl = pokemonResponse.data.species.url;
 
     // extract the URL for the Pokemon species
